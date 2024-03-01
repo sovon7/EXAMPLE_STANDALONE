@@ -54,5 +54,10 @@ export class PaymentComponent {
       Swal.fire('No product', 'Back to product', 'error');
       this.router.navigate(['../../fooddetails/products']);
     }
+
+  }
+
+  backTOcart(){
+      this.router.navigate(['/fooddetails/addtocart'])
   }
 }
