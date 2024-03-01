@@ -1,7 +1,6 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { FooddetailsComponent } from '../fooddetails.component';
-import { RouterTestingModule } from '@angular/router/testing';
 
 @Component({
   selector: 'app-home',

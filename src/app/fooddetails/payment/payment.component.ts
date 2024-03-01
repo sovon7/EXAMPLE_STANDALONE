@@ -1,11 +1,10 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router, RouterModule } from '@angular/router';
-import { FooddetailsComponent } from '../fooddetails.component';
-import Swal from 'sweetalert2';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router, RouterModule } from '@angular/router';
+import Swal from 'sweetalert2';
+import { FooddetailsComponent } from '../fooddetails.component';
 import { Product } from '../products/products.service';
-import { RouterTestingModule } from '@angular/router/testing';
 
 @Component({
   selector: 'app-payment',
@@ -14,7 +13,6 @@ import { RouterTestingModule } from '@angular/router/testing';
     CommonModule,
     RouterModule,
     FooddetailsComponent,
-    RouterTestingModule,
   ],
   templateUrl: './payment.component.html',
   styleUrls: ['./payment.component.css'],

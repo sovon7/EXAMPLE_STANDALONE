@@ -1,9 +1,8 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import Swal from 'sweetalert2';
-import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RouterTestingModule } from '@angular/router/testing';
 import { CustomerComponent } from '../customer.component';
 
 @Component({
@@ -15,7 +14,6 @@ import { CustomerComponent } from '../customer.component';
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterTestingModule,
   ],
   templateUrl: './forgot.component.html',
   styleUrls: ['./forgot.component.css'],
