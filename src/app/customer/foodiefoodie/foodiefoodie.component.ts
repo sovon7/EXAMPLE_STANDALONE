@@ -6,10 +6,8 @@ import { CustomerComponent } from '../customer.component';
 @Component({
   selector: 'app-foodiefoodie',
   standalone: true,
-  imports: [CommonModule,RouterModule,CustomerComponent],
+  imports: [CommonModule, RouterModule, CustomerComponent],
   templateUrl: './foodiefoodie.component.html',
-  styleUrls: ['./foodiefoodie.component.css']
+  styleUrls: ['./foodiefoodie.component.css'],
 })
-export class FoodiefoodieComponent {
-
-}
+export class FoodiefoodieComponent {}

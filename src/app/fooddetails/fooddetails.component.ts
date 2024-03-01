@@ -5,10 +5,8 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-fooddetails',
   standalone: true,
-  imports: [CommonModule,RouterModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './fooddetails.component.html',
-  styleUrls: ['./fooddetails.component.css']
+  styleUrls: ['./fooddetails.component.css'],
 })
-export class FooddetailsComponent {
-
-}
+export class FooddetailsComponent {}

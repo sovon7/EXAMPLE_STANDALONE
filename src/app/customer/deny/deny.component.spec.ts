@@ -8,7 +8,7 @@ describe('DenyComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [DenyComponent]
+      imports: [DenyComponent],
     });
     fixture = TestBed.createComponent(DenyComponent);
     component = fixture.componentInstance;

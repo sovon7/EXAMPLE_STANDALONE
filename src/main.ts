@@ -4,5 +4,5 @@ import { provideRouter } from '@angular/router';
 import { APP_ROUTE } from './app/app.routes';
 
 bootstrapApplication(AppComponent, {
-    providers:[provideRouter(APP_ROUTE)],
+  providers: [provideRouter(APP_ROUTE)],
 });

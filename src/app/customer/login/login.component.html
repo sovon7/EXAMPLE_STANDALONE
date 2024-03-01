@@ -1,26 +1,30 @@
-
 <app-customer></app-customer>
 <div class="body">
-    <div class="box">
-        <form >
-            <h2>Foodie-Foodie</h2><br>
-            <h2>Log In</h2>
-            <div class="inputBox">
-                <input type="text" placeholder="EmailId" #userName>
-                <span>User Name:</span>
-                <i></i>
-            </div>
-            <div class="inputBox">
-                <input type="password" #password>
-                <span>Password:</span>
-                <i></i>
-            </div>
-            <div class="links">
-                <a [routerLink]='["/customer/forgot"]' id="a1">Forgot Password</a>
-                <a [routerLink]='["/customer/register"]'>Don't have accont? Register</a>
-            </div>
-            <button type="submit"(click)="login(userName.value,password.value)">Login</button>
-        </form>
-    </div>
+  <div class="box">
+    <form>
+      <h2>Foodie-Foodie</h2>
+      <br />
+      <h2>Log In</h2>
+      <div class="inputBox">
+        <input type="text" placeholder="EmailId" #userName />
+        <span>User Name:</span>
+        <i></i>
+      </div>
+      <div class="inputBox">
+        <input type="password" #password />
+        <span>Password:</span>
+        <i></i>
+      </div>
+      <div class="links">
+        <a [routerLink]="['../../customer/forgot']" id="a1">Forgot Password</a>
+        <a [routerLink]="['../../customer/register']"
+          >Don't have accont? Register</a
+        >
+      </div>
+      <button type="submit" (click)="login(userName.value, password.value)">
+        Login
+      </button>
+    </form>
+  </div>
 </div>
 <!-- <button (click)="show()">Show</button> -->

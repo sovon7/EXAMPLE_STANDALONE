@@ -6,8 +6,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './deny.component.html',
-  styleUrls: ['./deny.component.css']
+  styleUrls: ['./deny.component.css'],
 })
-export class DenyComponent {
-
-}
+export class DenyComponent {}
