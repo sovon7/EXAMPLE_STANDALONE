@@ -1,27 +1,28 @@
-nav{
-    background-color: darkred;
+nav {
+  background-color: darkred;
 }
 
-.navbar{
-    border: 0px;
-    border-radius: 0px;
-    background-color: darkred;
+.navbar {
+  border: 0px;
+  border-radius: 0px;
+  background-color: darkred;
 }
-.navLinkAlign{
-    padding-left: 300px;
+.navLinkAlign {
+  padding-left: 300px;
 }
-.navbar-brand{
-    padding-right:120px ;
+.navbar-brand {
+  padding-right: 120px;
 }
-li{
-        padding-right: 90px;
+li {
+  padding-right: 90px;
 }
-.navtext{
-    color: white;
+.navtext {
+  color: white;
 }
-.navStyle{
-    margin-left:150px ;
+.navStyle {
+  margin-left: 150px;
 }
-.navbar-brand,.nav-link{
-    color: white;
+.navbar-brand,
+.nav-link {
+  color: white;
 }

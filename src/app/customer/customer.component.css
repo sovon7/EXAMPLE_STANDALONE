@@ -1,35 +1,33 @@
-nav{
-    background-color:brown;
+nav {
+  background-color: brown;
 }
 
-.navbar{
-    border: 0px;
-    border-radius: 0px;
-    background-color:brown;
+.navbar {
+  border: 0px;
+  border-radius: 0px;
+  background-color: brown;
 }
-.navLinkAlign{
-    padding-left: 300px;
+.navLinkAlign {
+  padding-left: 300px;
 }
-.navbar-brand{
-    padding-right:120px ;
+.navbar-brand {
+  padding-right: 120px;
 }
-li{
-        padding-right: 90px;
+li {
+  padding-right: 90px;
 }
-.navtext{
-    color: white;
+.navtext {
+  color: white;
 }
-.navStyle{
-    margin-left:150px ;
+.navStyle {
+  margin-left: 150px;
 }
-.nav-link{
-    color: rgb(235, 246, 235);
-    
+.nav-link {
+  color: rgb(235, 246, 235);
 }
-.navbar-brand
-{
-    color: whitesmoke;
+.navbar-brand {
+  color: whitesmoke;
 }
-.nav-link{
-    font-size: 18px;
+.nav-link {
+  font-size: 18px;
 }

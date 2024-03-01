@@ -7,9 +7,14 @@ import { FooddetailsComponent } from './fooddetails/fooddetails.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,CustomerComponent,FooddetailsComponent],
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    CustomerComponent,
+    FooddetailsComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'ExampleStandalone';

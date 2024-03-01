@@ -10,43 +10,51 @@ import { RouterTestingModule } from '@angular/router/testing';
 @Component({
   selector: 'app-payment',
   standalone: true,
-  imports: [CommonModule,RouterModule,FooddetailsComponent,RouterTestingModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    FooddetailsComponent,
+    RouterTestingModule,
+  ],
   templateUrl: './payment.component.html',
-  styleUrls: ['./payment.component.css']
+  styleUrls: ['./payment.component.css'],
 })
-export class PaymentComponent 
-{
-  productListToDisplay: Product[] = []
-  paymentForm!:FormGroup;
-  totalAmount!: number
+export class PaymentComponent {
+  productListToDisplay: Product[] = [];
+  paymentForm!: FormGroup;
+  totalAmount!: number;
 
-  constructor(private formBuilder:FormBuilder,private router: Router){}
+  constructor(
+    private formBuilder: FormBuilder,
+    private router: Router,
+  ) {}
 
-  ngOnInit() 
-  {
-    let amount:any = localStorage.getItem('totalAmount');
+  ngOnInit() {
+    let amount: any = localStorage.getItem('totalAmount');
     this.totalAmount = JSON.parse(amount);
   }
 
-  payment()
-  {
-    Swal.fire("Thank You...",this.totalAmount+' Rupees Payed Successful','success');
-    this.router.navigate(['../../fooddetails/products'])
-    
-          /* After Payment, Cart should be Empty  
-          *               &
-          *  if again hit button then it will go to Product page
-          */
+  payment() {
+    Swal.fire(
+      'Thank You...',
+      this.totalAmount + ' Rupees Payed Successful',
+      'success',
+    );
+    this.router.navigate(['../../fooddetails/products']);
 
-    let oldCart:any = localStorage.getItem('cart');
+    /* After Payment, Cart should be Empty
+     *               &
+     *  if again hit button then it will go to Product page
+     */
+
+    let oldCart: any = localStorage.getItem('cart');
     let cart = JSON.parse(oldCart);
     localStorage.removeItem('cart');
 
     this.productListToDisplay = cart;
-    if(cart == null || this.productListToDisplay.length == 0){
-      Swal.fire('No product','Back to product','error');
-      this.router.navigate(['../../fooddetails/products'])
+    if (cart == null || this.productListToDisplay.length == 0) {
+      Swal.fire('No product', 'Back to product', 'error');
+      this.router.navigate(['../../fooddetails/products']);
     }
   }
-
 }

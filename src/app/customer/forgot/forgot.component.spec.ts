@@ -8,7 +8,7 @@ describe('ForgotComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [ForgotComponent]
+      imports: [ForgotComponent],
     });
     fixture = TestBed.createComponent(ForgotComponent);
     component = fixture.componentInstance;

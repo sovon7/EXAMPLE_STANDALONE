@@ -1,24 +1,30 @@
 <div class="grid-container">
-    <!-- row 1 -->
-    <div class="search">
-      <app-fooddetails></app-fooddetails>
-    </div> 
-  
-    <!-- row 2 -->
-    <div class="product">
-      <div class="subgrid">
-        <div *ngFor="let p of productListToDisplay;let i = index">
-          <div class="card" style="width: 18rem;">
-            <img src="{{p.photoUrl}}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">{{p.name}}</h5>
-              <h5 class="card-title">Price:&nbsp;{{p.Price}} </h5>
-              <a class="btn btn-primary" (click)="remove(i)">Remove/Delete</a>
-            </div>
+  <!-- row 1 -->
+  <div class="search">
+    <app-fooddetails></app-fooddetails>
+  </div>
+
+  <!-- row 2 -->
+  <div class="product">
+    <div class="subgrid">
+      <div *ngFor="let p of productListToDisplay; let i = index">
+        <div class="card" style="width: 18rem">
+          <img src="{{ p.photoUrl }}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{ p.name }}</h5>
+            <h5 class="card-title">Price:&nbsp;{{ p.Price }}</h5>
+            <a class="btn btn-primary" (click)="remove(i)">Remove/Delete</a>
           </div>
         </div>
       </div>
-      <br>
-    <button id="pay" class="btn btn-success" [routerLink]='["../../fooddetails/payment"]'>Proceed To Payment</button><br><br>
+    </div>
+    <br />
+    <button
+      id="pay"
+      class="btn btn-success"
+      [routerLink]="['../../fooddetails/payment']"
+    >
+      Proceed To Payment</button
+    ><br /><br />
   </div>
-  </div>
+</div>

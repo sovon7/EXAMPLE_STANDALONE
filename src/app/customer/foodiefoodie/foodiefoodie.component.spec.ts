@@ -8,7 +8,7 @@ describe('FoodiefoodieComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [FoodiefoodieComponent]
+      imports: [FoodiefoodieComponent],
     });
     fixture = TestBed.createComponent(FoodiefoodieComponent);
     component = fixture.componentInstance;

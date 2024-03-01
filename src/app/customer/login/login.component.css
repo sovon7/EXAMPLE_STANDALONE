@@ -1,157 +1,158 @@
-.body{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 10px;
-    padding: 50px;
-    opacity: 0.90; 
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10px;
+  padding: 50px;
+  opacity: 0.9;
 }
 
-
-.box form{
-    inset: 4x;
-    background: #222;
-    padding: 80px 40px;
-    border-radius: 8px;
-    z-index:2;
-    display: flex;
-    flex-direction: column;
+.box form {
+  inset: 4x;
+  background: #222;
+  padding: 80px 40px;
+  border-radius: 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
 }
 
-.box form h2{
-    color: #fff;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 0.1em;
+.box form h2 {
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
 }
 
-.box form .inputBox{
-    position: relative;
-    width: 300px;
-    margin-top: 35px;
+.box form .inputBox {
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
 }
 
-.box form .inputBox input
-{
-    position:relative;
-    width:100%;
-    padding: 20px 10px 10px;
-    background: transparent;
-    outline: none;
-    border: none;
-    box-shadow: none;
-    color: #3e42c3;
-    font-weight: bold;
-    font-size: 1em;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-    z-index: 10;
+.box form .inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: #3e42c3;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
 }
 
-.box form .inputBox span{
-    position:absolute;
-    left:0;
-    padding: 20px 0px 10px;
-    pointer-events: none;
-    color: #8f8f8f;
-    font-size: 1em;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
+.box form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 0px 10px;
+  pointer-events: none;
+  color: #8f8f8f;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
 }
 
 .box form .inputBox input:valid ~ span,
-.box form .inputBox input:focus ~ span
-{
-    color: #fff;
-    font-size: 0.75em;
-    transform:translateY(-45px);
+.box form .inputBox input:focus ~ span {
+  color: #fff;
+  font-size: 0.75em;
+  transform: translateY(-45px);
 }
 
-.box form .inputBox i
-{
-    position: absolute;
-    left:0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    border-radius: 4px;
-    overflow: hidden;
-    transition: 0.5s;
-    pointer-events: none;
+.box form .inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
 }
 
 .box form .inputBox input:valid ~ i,
-.box form .inputBox input:focus ~ i
-{
-    height: 44px;
+.box form .inputBox input:focus ~ i {
+  height: 44px;
 }
 
-.box form .links
-{
-    display: flex;
-    justify-content: space-between;
+.box form .links {
+  display: flex;
+  justify-content: space-between;
 }
 
-.box form .links a 
-{
-    margin: 10px 0;
-    font-size:0.75em;
-    color: #8f8f8f;
-    text-decoration: none;
+.box form .links a {
+  margin: 10px 0;
+  font-size: 0.75em;
+  color: #8f8f8f;
+  text-decoration: none;
 }
 
-.box form .links #a1:hover
-{
-    color: #c22e2e;
+.box form .links #a1:hover {
+  color: #c22e2e;
 }
 
-.box form .links a:hover 
-{
-    color: #3ab1e4;
+.box form .links a:hover {
+  color: #3ab1e4;
 }
 
-
-.box form  button
-{
-    border: none;
-    outline: none;
-    padding: 9px 25px;
-    background: #fff;
-    cursor: pointer;
-    font-size: 0.9em;
-    border-radius: 4px;
-    font-weight:600;
-    width: 100px;
-    margin-top: 10px;
+.box form button {
+  border: none;
+  outline: none;
+  padding: 9px 25px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9em;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 100px;
+  margin-top: 10px;
 }
 
-
-h2{
-    position: relative;
-    color: #1f7a36;
-    -webkit-box-reflect: below 1px linear-gradient(transparent,#0000);
-    line-height: 0.70em;
-    animation: animate 5s linear infinite;
+h2 {
+  position: relative;
+  color: #1f7a36;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0000);
+  line-height: 0.7em;
+  animation: animate 5s linear infinite;
 }
 
-@keyframes animate 
-{
+@keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #0e3742;
+    text-shadow: none;
+  }
 
-    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
-    {
-        color: #0e3742;
-        text-shadow: none;
-    }
-
-    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
-    {
-        color: #fff;
-        text-shadow:  0 0 10px #03bcf4,
-        0 0 20px #03bcf4,
-        0 0 40px #03bcf4,
-        0 0 80px #03bcf4,
-        0 0 160px #03bcf4
-    }
-    
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow:
+      0 0 10px #03bcf4,
+      0 0 20px #03bcf4,
+      0 0 40px #03bcf4,
+      0 0 80px #03bcf4,
+      0 0 160px #03bcf4;
+  }
 }
