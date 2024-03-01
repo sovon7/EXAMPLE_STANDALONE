@@ -42,7 +42,7 @@ export class AddToCartComponent
     this.productListToDisplay = cart;
     if(cart == null || this.productListToDisplay.length == 0){
       Swal.fire('No product','Back to product','error');
-      this.route.navigate(['../../fooddetails/products'])
+      this.route.navigate(['/fooddetails/products'])
     }
    // console.log(this.productListToDisplay)
     this.totalAmount=0;

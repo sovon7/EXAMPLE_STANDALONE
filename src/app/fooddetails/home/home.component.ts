@@ -7,7 +7,7 @@ import { RouterTestingModule } from "@angular/router/testing";
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule,FooddetailsComponent,RouterTestingModule],
+  imports: [CommonModule,FooddetailsComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

@@ -12,8 +12,8 @@ export const CUST_ROUTE: Route[] =
     path:'register',
     loadComponent: () => import('./register/register.component').then((c) => c.RegisterComponent)
   },
-  { path:'forgot',component:ForgotComponent},
-  {path:'intro',component:FoodiefoodieComponent}
+  { path:'forgot',component:ForgotComponent },
+  { path:'intro',component:FoodiefoodieComponent }
 
 
 ];

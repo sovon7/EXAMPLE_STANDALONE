@@ -59,7 +59,7 @@ export class LoginComponent
       {
         Swal.fire("Thank You...",'Registration Successful','success');
         this.isAuthenticated = true;
-        this.router.navigate(["../../fooddetails/home"]); 
+        this.router.navigate(["/fooddetails/home"]); 
         this.flag = true
       }
     }

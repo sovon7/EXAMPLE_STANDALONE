@@ -11,7 +11,7 @@ import { CustomerComponent } from '../customer.component';
 @Component({
   selector: 'app-forgot',
   standalone: true,
-  imports: [CommonModule, CustomerComponent, RouterModule, FormsModule, ReactiveFormsModule, RouterTestingModule],
+  imports: [CommonModule, CustomerComponent, RouterModule, FormsModule, ReactiveFormsModule],
   templateUrl: './forgot.component.html',
   styleUrls: ['./forgot.component.css']
 })
