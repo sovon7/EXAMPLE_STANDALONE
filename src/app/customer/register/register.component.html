@@ -1,0 +1,58 @@
+<app-customer></app-customer>
+<div class="body">
+    <div class="box">
+        <form [formGroup]="registerForm">
+            <h2>Foodie-Foodie</h2> <br>
+            <h2>Register</h2><br>
+            
+            <div id="inputBox" class="form-group">
+                <input type="text" formControlName="fullName" (click)="onName()">
+                <span>Full Name:</span>
+                <div *ngIf="nmFlag && registerForm.controls['fullName'].errors?.['required'] && registerForm.controls['fullName'].dirty" class="alert alert-danger">
+                    Full Name field is required. 
+                </div>
+                <div *ngIf="nmFlag && registerForm.controls['fullName'].errors?.['pattern']" class="alert alert-danger">
+                    Full Name Should be correct Format <br> (example-Sovon Maji)
+                </div>
+            </div>
+
+            <div id="inputBox" class="form-group">
+                <input type="email" formControlName="emailid" (click)="onMail()">
+                <span>Email Id:</span>
+                <div *ngIf="emailFlag && registerForm.controls['emailid'].errors?.['required'] && registerForm.controls['emailid'].dirty" class="alert alert-danger">
+                    Email id field is required. 
+                </div>
+                <div *ngIf="emailFlag && registerForm.controls['emailid'].errors?.['pattern']" class="alert alert-danger">
+                    Email id field should be correct<br>(example-sovon12@gmail.com)
+                </div>
+            </div>
+            
+            <div id="inputBox" class="form-group">
+                <input type="password" formControlName="password" (click)="onPass()">
+                <span>Password:</span>
+                <div *ngIf="passFlag && registerForm.controls['password'].errors?.['required'] && registerForm.controls['password'].dirty" class="alert alert-danger">
+                    Password field is required. 
+                </div>
+                <div *ngIf="passFlag && registerForm.controls['password'].errors?.['pattern']" class="alert alert-danger">
+                    Password field should be correct (Atleast 1 word , 1 number , 1 special character)
+                </div>
+            </div>
+
+            <div id="inputBox" class="form-group">
+                <input type="number" formControlName="phnNum" (click)="onPhn()">
+                <span>Phone Number:</span>
+               
+                <div *ngIf="phnFlag && registerForm.controls['phnNum'].errors && registerForm.controls['phnNum'].dirty" class="alert alert-danger">
+                    Phone Number field is required.
+                </div>
+            </div>
+
+            <div class="links">
+                <a [routerLink]='["../../customer/login"]'>Have an account? Login</a>
+            </div>
+            <button type="submit" value="Register" (click)="saveData()" [disabled]="!registerForm.valid">Register</button>
+        </form>
+    </div>
+</div>
+
+<!-- <button (click)="loadData()">Load</button> -->

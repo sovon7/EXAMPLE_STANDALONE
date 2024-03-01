@@ -1,0 +1,27 @@
+.card
+{
+    margin-top: 10%;
+    margin-left: 35%;
+    background-image: linear-gradient(to right,rgb(80, 186, 64), rgb(192, 114, 95));
+}
+
+input{
+    position:relative;
+    width:100%;
+    /* padding: 20px 10px 10px; */
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #3e42c3;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.span1
+{
+    padding-left: 200px;
+}

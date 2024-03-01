@@ -1,0 +1,28 @@
+
+<div class="grid-container">
+    <!-- row 1 -->
+    <div class="search">
+        <app-fooddetails></app-fooddetails>
+        <div class="display-4"><strong>Products</strong></div>
+        <br>
+        <input (keyup)="search()" type="text" (click)="search()" placeholder="Search using product name or brand.."
+            size="50" [(ngModel)]="searchText">
+    </div>
+
+    <!-- row 2 -->
+    <div class="product">
+        <div class="subgrid">
+            <div *ngFor="let p of productListToDisplay">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{p.photoUrl}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{p.name}}</h5>
+                        <h5 class="card-title">Price:&nbsp;{{p.Price}} </h5>
+                        <!-- <h5 class="card-title">Description:</h5><p class="card-text">{{p.description}} </p> -->
+                        <a class="btn btn-primary" (click)="addtocart(p)">AddToCart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

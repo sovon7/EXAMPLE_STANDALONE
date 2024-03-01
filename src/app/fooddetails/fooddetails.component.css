@@ -1,0 +1,27 @@
+nav{
+    background-color: darkred;
+}
+
+.navbar{
+    border: 0px;
+    border-radius: 0px;
+    background-color: darkred;
+}
+.navLinkAlign{
+    padding-left: 300px;
+}
+.navbar-brand{
+    padding-right:120px ;
+}
+li{
+        padding-right: 90px;
+}
+.navtext{
+    color: white;
+}
+.navStyle{
+    margin-left:150px ;
+}
+.navbar-brand,.nav-link{
+    color: white;
+}

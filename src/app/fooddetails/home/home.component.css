@@ -1,0 +1,85 @@
+app-fooddetails
+{
+    width: 100%;
+    position:fixed;
+    z-index: 1000;
+
+    background: #eeeeee;
+    -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+}
+
+p{
+    padding-top: 50px;
+}
+
+.body{
+    overflow-x: hidden !important;
+    background-color: #ebdfeb;
+}
+nav{
+    background-color: teal;
+}
+.navbar{
+    border: 0px;
+    border-radius: 0px;
+    background-color: teal;
+    color: white;
+}
+.navLinkAlign{
+    padding-left: 300px;
+}
+li{
+        padding-right: 120px;
+}.navtext{
+    color: white;
+}
+.navStyle{
+    margin-left:150px ;
+}
+.carouselImage{
+    width: 100%;
+    height: 700px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 70px;
+}
+.carousel-caption{
+    padding-right: 900px;
+}
+.cardStyle{
+    /* padding: 20px; */
+    /* background-color: #66b2b2; */
+    border: 2px;
+    border-radius: 2px;
+}
+.home{
+    padding: 20px;
+    font-size: 18px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-around;
+    grid-gap:20px;
+    padding-left: 20px;
+    /* padding-top: 15px; */
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.one{
+    grid-column: 2/2;
+    grid-row: 1/ span 2;
+    background-image: linear-gradient(to right,rgb(157, 157, 90), rgb(232, 172, 157));
+}
+.two{
+    grid-column: 1/ span 1;
+    padding-top:25px;
+    background-image: linear-gradient(to right,rgb(157, 157, 90), rgb(232, 172, 157));
+}
+.three{
+    grid-column: 1/ span 1;
+    background-image: linear-gradient(to right,rgb(157, 157, 90), rgb(232, 172, 157));
+}
